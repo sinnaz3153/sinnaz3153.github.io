@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Website von Sinnaz3153</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <img src="https://img.icons8.com/ios-filled/50/000000/bright-moon.png" alt="Toggle Theme" id="themeIcon"/>
+    </div>
+    <div class="container">
+        <h1>Die Website von Sinnaz3153</h1>
+        <p>Schaue dir seine Projekte, Discord, YouTube und andere Sachen von ihm an</p>
+        <button>Projekte</button>
+        <button onclick="window.location.href = 'https://discord.gg/kyDYm3UPDa';">Discord</button>
+    </div>
+    <div class="social">
+        <div class="social-button" onclick="toggleMenu()">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/share.png" alt="Social Icon"/>
+        </div>
+        <div class="social-menu" id="socialMenu">
+            <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub"/> GitHub</a>
+            <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png" alt="YouTube"/> YouTube</a>
+            <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/xbox-x.png" alt="X"/> X</a>
+            <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/twitch.png" alt="Twitch"/> Twitch</a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('socialMenu');
+            const container = document.querySelector('.container');
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
+                container.classList.remove('blur');
+            } else {
+                menu.classList.add('show');
+                container.classList.add('blur');
+            }
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.src = 'https://img.icons8.com/ios-filled/50/000000/sun.png';
+            } else {
+                themeIcon.src = 'https://img.icons8.com/ios-filled/50/000000/bright-moon.png';
+            }
+        }
+    </script>
+</body>
+</html>

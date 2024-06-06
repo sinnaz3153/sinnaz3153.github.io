@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/data/video_2_3_1.gif') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background: url('/data/video_2_3_1.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+    background: #6a0dad;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1e3a8a;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.social-button {
+    background: #ff4081;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-button:hover {
+    background: #e91e63;
+}
+
+.social-menu {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-menu.show {
+    display: flex;
+}
+
+.social-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.social-menu a:hover {
+    background: #f0f0f0;
+}
+
+.social-menu img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.dark-mode button {
+    background: #4b0082;
+    color: #fff;
+    border-color: #ffa500;
+}
+
+.dark-mode button:hover {
+    background: #2e3b8a;
+}
+
+.dark-mode .social-button {
+    background: #f06292;
+}
+
+.dark-mode .social-button:hover {
+    background: #d81b60;
+}
+
+.dark-mode .social-menu {
+    background: #444;
+}
+
+.dark-mode .social-menu a {
+    color: #ddd;
+}
+
+.dark-mode .social-menu a:hover {
+    background: #555;
+}
+
+.dark-mode .container h1,
+.dark-mode .container p {
+    color: #fff;
+}
+
+.dark-mode .theme-toggle img {
+    filter: invert(1);
+}
