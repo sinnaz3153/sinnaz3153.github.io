@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Website von Sinnaz3153</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Die Website von Sinnaz3153</h1>
+        <p>Schaue dir seine Projekte, Discord, YouTube und andere Sachen von ihm an.</p>
+        <button id="projekteButton" onclick="toggleMenu()">Projekte</button>
+        <button id="discordButton" onclick="window.location.href = 'https://discord.com'">Discord</button>
+        <button id="youtubeButton" onclick="window.location.href = 'https://www.youtube.com'">YouTube</button>
+        <div class="social">
+            <div class="social-button" onclick="toggleMenu()">
+                <img src="https://img.icons8.com/fluent/48/000000/menu.png" alt="menu">
+            </div>
+            <div id="socialMenu" class="social-menu">
+                <a href="https://github.com"><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="github">GitHub</a>
+                <a href="https://www.youtube.com"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="youtube">YouTube</a>
+                <a href="https://www.twitch.tv"><img src="https://img.icons8.com/color/48/000000/twitch.png" alt="twitch">Twitch</a>
+            </div>
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <img id="themeIcon" src="https://img.icons8.com/ios-filled/50/000000/sun.png" alt="theme">
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('socialMenu');
+            const container = document.querySelector('.container');
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
+                container.classList.remove('blur');
+            } else {
+                menu.classList.add('show');
+                container.classList.add('blur');
+            }
+        }
 
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.src = 'https://img.icons8.com/ios-filled/50/000000/sun.png';
+            } else {
+                themeIcon.src = 'https://img.icons8.com/ios-filled/50/000000/bright-moon.png';
+            }
+        }
+    </script>
+</body>
+</html>
