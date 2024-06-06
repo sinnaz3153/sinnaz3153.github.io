@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Projekt 1",
+        "description": "Beschreibung des Projekts 1.",
+        "bld": "data/sinnaz-profile.png"
+    },
+    {
+        "name": "Projekt 2",
+        "description": "Beschreibung des Projekts 2.",
+        "bld": "BLD2"
+    },
+    {
+        "name": "Projekt 3",
+        "description": "Beschreibung des Projekts 3.",
+        "bld": "BLD3"
+    },
+    {
+        "name": "Projekt 3",
+        "description": "Beschreibung des Projekts 3.",
+        "bld": "BLD3"
+    },
+    {
+        "name": "Projekt 3",
+        "description": "Beschreibung des Projekts 3.",
+        "bld": "BLD3"
+    },
+    {
+        "name": "Projekt 3",
+        "description": "Beschreibung des Projekts 3.",
+        "bld": "BLD3"
+    },
+    {
+        "name": "Projekt 3",
+        "description": "Beschreibung des Projekts 3.",
+        "bld": "BLD3"
+    }
+]
